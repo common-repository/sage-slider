@@ -1,0 +1,201 @@
+/**
+ * Sage Slider Styles
+ */
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.sage-slider button {
+	background: none !important;
+	background-color: transparent !important;
+	border: 0;
+	color: inherit;
+	/* cursor: default; */
+	font: inherit;
+	line-height: normal;
+	overflow: visible;
+	-webkit-appearance: button; /* for input */
+	-webkit-user-select: none; /* for button */
+	-moz-user-select: none;
+	-ms-user-select: none;
+	padding: 0 0.20em 0 0.20em;
+	font-size: 2em;
+	display: inline-block;
+	margin: 0;
+	min-width: 0;
+	text-align: center;
+}
+
+.sage-slider button:hover {
+	background-color: transparent;
+	color: #181818;
+	text-decoration: none;
+}
+
+/* Slider */
+.slick-slider {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.slick-list:focus {
+	outline: none;
+}
+
+.slick-list.dragging {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+	-webkit-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+	position: relative;
+	left: 0;
+	top: 0;
+	display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+	content: "";
+	display: table;
+}
+
+.slick-track:after {
+	clear: both;
+}
+
+.slick-loading .slick-track {
+	visibility: hidden;
+}
+
+.slick-slide {
+	float: left;
+	height: 100%;
+	min-height: 1px;
+	display: none;
+}
+
+[dir="rtl"] .slick-slide {
+	float: right;
+}
+
+.slick-slide img {
+	display: block;
+	width: 100%;
+}
+
+.slick-slide.slick-loading img {
+	display: none;
+}
+
+.slick-slide.dragging img {
+	pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+	display: block;
+	height: auto;
+}
+
+.slick-loading .slick-slide {
+	visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+	display: block;
+	height: auto;
+	border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+	display: none;
+}
+
+.slick-dots {
+	text-align: center;
+	margin: 0;
+	-webkit-margin-before: 0;
+}
+
+.slick-dots li {
+	display: inline-block;
+}
+
+.sage-slide-content {
+	position: absolute;
+	top: 0.40em;
+}
+
+#sage-slider-container .sage-slide-content {
+	text-decoration: none;
+	box-shadow: none;
+	background: linear-gradient(to left, rgba(255,0,0,0), rgba(255,165,0,1));
+	padding: 0.25em 5em 0.25em 0.50em;
+}
+
+#sage-slider-container .sage-slide-content a {
+	color: white;
+	bottom: 0;
+	background: none;
+	border: none;
+	overflow: hidden;
+}
+
+#sage-slider-container a:hover {
+	color: #292929;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+#sage-slider-container .slide-title {
+	font-size: 1.25em;
+	margin: 0;
+}
+
+#sage-slider-container .slide-description {
+	font-size: 0.75em;
+	margin: 0;
+}
+
+#sage-slider-container button:before {
+	font-size: 10px;
+}
+
+#sage-slider-container li {
+	margin: 0;
+}
